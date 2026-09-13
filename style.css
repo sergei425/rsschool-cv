@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Varela+Round&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  color: #2f1111;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.header {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid #500808;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      max-width: 120px;
+      height: 70px;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+
+    li:hover {
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #2f1111;
+      font-weight: 400;
+      transition: all 2s ease;
+    }
+  }
+}
+
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  text-align: center;
+  margin-bottom: 35px;
+
+  h1 {
+    font-size: 44px;
+  }
+}
+
+.about__wrap {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 155px;
+
+  .about__text {
+    text-align: end;
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+#contacts {
+  text-align: center;
+  margin-bottom: 35px;
+
+  p {
+    font-size: 22px;
+
+    span {
+       font-size: 18px
+    }
+  }
+}
+
+#skills {
+  text-align: center;
+  margin-bottom: 35px;
+
+  li {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+}
+
+
+#code {
+  text-align: center;
+  margin-bottom: 35px;
+
+  code {
+   font-size: 24px;
+  }
+}
+
+#projects {
+  text-align: center;
+  margin-bottom: 35px;
+
+  p {
+   font-size: 24px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  li {
+    margin-bottom: 20px;
+
+    a {
+        font-size: 18px;
+        color: #500808;
+    }
+  }
+}
+#experience {
+  text-align: center;
+  margin-bottom: 35px;
+
+  .experience__list {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    li + li {
+        padding-left: 14px;
+        border-left: 2px solid #2f1111;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .github,
+  .rsshool {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    svg {
+        width: 35px;
+    }
+
+    span {
+        font-size: 18px;
+        color: #500808;
+    }
+  }
+} 
